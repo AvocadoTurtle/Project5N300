@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>FIND KRAMPUS</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+
+// This display markers at various parts of the world.
+// When the user clicks the marker, an info window opens.
+
+for(i=0;i<5;i++){
+
+function initialize() {
+  var myLatlng = new google.maps.LatLng(37,138);
+  var mapOptions = {
+    zoom: 3,
+    center: myLatlng
+  };
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var image = new google.maps.MarkerImage("Present.jpg", null, null, null, new google.maps.Size(20,20));
+
+  var contentString = '<p><strong>Krampus is Here!</strong><br></br><img src="Krampus.jpg"></p>'
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+  var FalseString = '<p><strong>Krampus is not here!</strong></p>'  
+
+  var FalseWindow = new google.maps.InfoWindow({
+      content: FalseString
+  });
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker2 = new google.maps.Marker({
+      position: new google.maps.LatLng(37,58),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker3 = new google.maps.Marker({
+      position: new google.maps.LatLng(13,100),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker4 = new google.maps.Marker({
+      position: new google.maps.LatLng(32,-95),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker5 = new google.maps.Marker({
+      position: new google.maps.LatLng(52,125),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker6 = new google.maps.Marker({
+      position: new google.maps.LatLng(26,18),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker7 = new google.maps.Marker({
+      position: new google.maps.LatLng(53,6),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker8 = new google.maps.Marker({
+      position: new google.maps.LatLng(23,82),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker9 = new google.maps.Marker({
+      position: new google.maps.LatLng(20,56),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker10 = new google.maps.Marker({
+      position: new google.maps.LatLng(39.5,3),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker11 = new google.maps.Marker({
+      position: new google.maps.LatLng(23,106),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+  
+  var marker12 = new google.maps.Marker({
+      position: new google.maps.LatLng(-28,-70),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker13 = new google.maps.Marker({
+      position: new google.maps.LatLng(59,18),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker14 = new google.maps.Marker({
+      position: new google.maps.LatLng(34,118),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker15 = new google.maps.Marker({
+      position: new google.maps.LatLng(-80,-20),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+  var marker16 = new google.maps.Marker({
+      position: new google.maps.LatLng(50,-88),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot3',
+      icon: image
+  });
+  
+  var marker17 = new google.maps.Marker({
+      position: new google.maps.LatLng(18,-100),
+      map: map,
+      animation: google.maps.Animation.DROP,
+      title: 'Hidding Spot',
+      icon: image
+  });
+
+    
+  google.maps.event.addListener(marker, 'click', function() {
+    FalseWindow.open(map,marker);
+  });
+  
+  google.maps.event.addListener(marker2, 'click', function() {
+    FalseWindow.open(map,marker2);
+  });
+  
+  google.maps.event.addListener(marker3, 'click', function() {
+    FalseWindow.open(map,marker3);
+  });
+ 
+  google.maps.event.addListener(marker4, 'click', function() {
+    FalseWindow.open(map,marker4);
+  });
+
+  google.maps.event.addListener(marker5, 'click', function() {
+    FalseWindow.open(map,marker5);
+  });
+
+  google.maps.event.addListener(marker6, 'click', function() {
+    FalseWindow.open(map,marker6);
+  });
+  
+  google.maps.event.addListener(marker7, 'click', function() {
+    FalseWindow.open(map,marker7);
+  });
+
+  google.maps.event.addListener(marker8, 'click', function() {
+    FalseWindow.open(map,marker8);
+  });
+
+  google.maps.event.addListener(marker9, 'click', function() {
+    FalseWindow.open(map,marker9);
+  });
+
+  google.maps.event.addListener(marker10, 'click', function() {
+    FalseWindow.open(map,marker10);
+  });
+
+  google.maps.event.addListener(marker11, 'click', function() {
+    FalseWindow.open(map,marker11);
+  });
+
+  google.maps.event.addListener(marker12, 'click', function() {
+    FalseWindow.open(map,marker12);
+  });
+
+  google.maps.event.addListener(marker13, 'click', function() {
+    FalseWindow.open(map,marker13);
+  });
+
+  google.maps.event.addListener(marker14, 'click', function() {
+    FalseWindow.open(map,marker14);
+  });
+
+  google.maps.event.addListener(marker15, 'click', function() {
+    infowindow.open(map,marker15);
+  });
+
+  google.maps.event.addListener(marker16, 'click', function() {
+    FalseWindow.open(map,marker16);
+  });
+
+  google.maps.event.addListener(marker17, 'click', function() {
+    FalseWindow.open(map,marker17);
+  });
+
+  
+  google.maps.event.addListener(marker15, 'click', winning);
+
+//could not quite figure out a looping mechanism
+//for adding ticks each time a wrong present
+//is clicked 
+ if(marker17.addListener)
+   prompt("Time is ticking!")
+else
+   i=5;
+}
+
+
+function winning(event) {
+      prompt("YOU WIN!");
+	
+};
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+}
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
