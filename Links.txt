@@ -1,0 +1,3 @@
+Public APP:https://build.phonegap.com/apps/1184512/share
+
+GitHub:https://github.com/AvocadoTurtle/Project5N300
